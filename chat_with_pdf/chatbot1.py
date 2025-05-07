@@ -1,2 +1,2 @@
 #Test code for the chatbot
-# print('hi')
+print('hi')
