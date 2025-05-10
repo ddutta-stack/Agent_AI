@@ -25,3 +25,4 @@ class KnowledgeBase:
         # Add the texts to the vectorstore  
     def get_vector_store(self):
         return self.vector_store
+    # Next will create an agent
