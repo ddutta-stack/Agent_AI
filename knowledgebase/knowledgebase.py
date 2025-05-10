@@ -2,7 +2,7 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
 # from langchain_community.vectorstores import Chroma -->Ignoring as we are not creating any expternal DB
-from langchain.vectorstores import inMemory
+from langchain.vectorstores import 
 class KnowledgeBase:
     def __init__(self, pathtopdf):
         loader = PyPDFLoader(pathtopdf)
