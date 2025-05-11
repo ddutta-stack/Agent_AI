@@ -39,4 +39,4 @@ workflow.add_edge("retrieve_similar_docs", "invoke_llm")
 workflow.add_edge("invoke_llm", "process_Result")
 
 workflow.set_entry_point("retrieve_similar_docs")
-rag_graph=workflow.compile
+rag_graph = workflow.compile()
