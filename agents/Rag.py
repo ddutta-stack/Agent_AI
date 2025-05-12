@@ -10,7 +10,7 @@ class RAGState(BaseModel):
     """
     # Define the state variables
     query: Optional[str]
-    retrieved_documents: Optional[List[str]]
+    retrieved_documents: Optional[List[str]] 
     llm_response: Optional[str]
 def retrieve_similar_docs(state: "RAGState")->RAGState:       
         """
