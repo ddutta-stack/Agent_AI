@@ -8,7 +8,8 @@ class KnowledgeBase:
     def __init__(self, pathtopdf):
         loader = PyPDFLoader(pathtopdf)
         documents= loader.load()
-        # Initialize the text splitter  
+        # Initialize the text splitter  with chunk size and overlap
+        # This will split the documents into smaller chunks
     
         textsplitter = RecursiveCharacterTextSplitter(
             chunk_size=1000,
